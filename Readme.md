@@ -38,6 +38,11 @@ Setup Jenkins at [http://localhost]()
 
         $ sudo docker-compose logs worker
 
+* There is a docker exec command that can be used to connect to a container that is already running:
+
+        $ sudo docker ps
+        $ sudo docker exec -it <CONTAINER ID> /bin/bash
+
 <a name="restore"></a>
 ### Restore existing jenkins configuration
 
