@@ -23,6 +23,8 @@ services:
       JENKINS_RETRY: "10"
     volumes:
     - jenkins-worker:/var/jenkins_home/worker
+    - /mnt/los-mirror:/mnt/los-mirror
+    - /mnt/los-build:/mnt/los-build
 
 volumes:
   jenkins-master:
