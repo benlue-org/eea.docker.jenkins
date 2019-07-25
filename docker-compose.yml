@@ -8,6 +8,9 @@ services:
     - JAVA_OPTS=-Xmx2048m
     volumes:
     - jenkins-master:/var/jenkins_home
+    - /mnt/los-mirror:/mnt/los-mirror
+    - /mnt/los-build:/mnt/los-build
+
 
   worker:
     image: eeacms/jenkins-slave
